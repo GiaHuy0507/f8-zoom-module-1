@@ -1,19 +1,177 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
+    <%- include("./partials/head.ejs")%>
   </head>
   <body>
     <div class="wrapper">
-      <%- include("./partials/header.ejs")%>
-      <main>
-        <h1>about</h1>
-      </main>
+      <div class="header-wrapper">
+        <%- include("./partials/header.ejs")%>
+
+        <!-- hero -->
+
+        <section class="hero">
+          <div class="container">
+            <div class="row">
+              <!-- text  -->
+              <div class="col-10 offset-1">
+                <div class="hero-content">
+                  <h4 class="hero__subtitle subtitle subtitle--dark">
+                    #1 Law Firm in New York
+                  </h4>
+                  <h1 class="hero__title title title--dark">
+                    Where The Experience To Guide You
+                  </h1>
+                  <p class="hero__desc desc desc--dark">
+                    A law firm with deep expertise in New Jersey residential &
+                    investment property transactions and many other things.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end header-wrapper -->
+      </div>
+
+      <!-- story -->
+      <section class="story">
+        <div class="container">
+          <div class="row">
+            <div class="col-5">
+              <div class="story__content">
+                <span class="story__subtitle subtitle--gray">#Story</span>
+                <h2 class="story-title title">
+                  Through And Complete Attention to Law
+                </h2>
+                <p class="story__desc desc desc--gray">
+                  Your initial meeting with Parmele Law Firm sets in motion the
+                  difficult – and tedious – process of getting your benefits for
+                  you.
+                </p>
+                <p class="story__desc desc desc--gray">
+                  While Mr. Parmele, his paralegals, and clerks are busy
+                  assisting you with your forms, helping you assemble your
+                  documentation, and keeping you updated regularly, Mr. Parmele
+                  is busy behind the scenes, focusing on winning your case.
+                </p>
+                <p class="story__desc desc desc--gray">
+                  How your case ends up may well be up to you.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-6 offset-1">
+              <div class="story__img">
+                <img src="./assets/images/img-about-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="gallery__content">
+                <span class="gallery__subtitle subtitle--gray">#Gallery</span>
+                <h2 class="gallery__title title">Justice Law Firm</h2>
+                <p class="gallery__desc desc desc--gray">
+                  Our Law Office provides a professional experience for all our
+                  clients, helping them navigate their legal rights.
+                </p>
+              </div>
+              <div class="gallery__img">
+                <img src="./assets/images/img-about-2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="gallery-dots">
+                <span class="gallery-dot gallery-dot--active"></span>
+                <span class="gallery-dot"></span>
+                <span class="gallery-dot"></span>
+                <span class="gallery-dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- count down -->
+      <section class="countdown">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="countdown__content">
+                <article class="countdown__list">
+                  <h1>1782</h1>
+                  <span>Law Cases</span>
+                </article>
+                <article class="countdown__list">
+                  <h1>10+</h1>
+                  <span>Lawyer</span>
+                </article>
+                <article class="countdown__list">
+                  <h1>98%</h1>
+                  <span>Happy Clients</span>
+                </article>
+                <article class="countdown__list">
+                  <h1>90%</h1>
+                  <span>Winning Case</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- video -->
+      <section class="video">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="video__content">
+                <span class="video__subtitle subtitle--gray">#Gallery</span>
+                <h2 class="video__title title">Justice Law Firm</h2>
+                <p class="video__desc desc desc--gray">
+                  Our Law Office provides a professional experience for all our
+                  clients, helping them navigate their legal rights.
+                </p>
+              </div>
+
+              <div class="video-play">
+                <img src="./assets/images/img-about-3.png" alt="" />
+                <a href="#" class="video-play__btn">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team-->
+      <%- include("./partials/team.ejs")%>
+
+      <!-- Awards -->
+      <%- include("./partials/award.ejs")%>
+      <!-- end awards -->
+
+      <!-- cta -->
+      <%- include("./partials/cta.ejs")%>
+      <!-- end cta -->
+      <!-- footer -->
       <%- include("./partials/footer.ejs")%>
     </div>
-
-    <script type="module" src="./main.js"></script>
   </body>
+  <script type="module" src="./main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

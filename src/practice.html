@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Practice</title>
+    <%- include("./partials/head.ejs")%>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-wrapper">
+        <%- include("./partials/header.ejs") %>
+
+        <!-- hero -->
+
+        <section class="hero">
+          <div class="container">
+            <div class="row">
+              <!-- text  -->
+              <div class="col-10 offset-1">
+                <div class="hero-content">
+                  <h4 class="hero__subtitle subtitle subtitle--dark">
+                    #1 Law Firm in New York
+                  </h4>
+                  <h1 class="hero__title title title--dark">
+                    Our Practice Areas to Serve You
+                  </h1>
+                  <p class="hero__desc desc desc--dark">
+                    Where every injury is personal. We are a different kind of
+                    law firm. Let our small, passionate group of trial lawyers
+                    fight for your rights!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- end header-wrapper -->
+      <%- include("./partials/service.ejs") %>
+
+      <!-- cta -->
+      <section class="cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="cta-top">
+                <h3 class="subtitle subtitle--white">#CTA</h3>
+                <h2 class="title title--white">Dealing With a Issue?</h2>
+                <p class="cta-desc desc desc--center desc--white">
+                  Where every injury is personal. We are a different kind of law
+                  firm. Let our small, passionate group of trial lawyers fight
+                  for your rights!
+                </p>
+                <a href="#!" class="btn btn--medium">Get a Consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end cta -->
+      <!-- footer -->
+      <%- include("./partials/footer.ejs") %>
+    </div>
+    <script type="module" src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+/* Base button styles */
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Manrope;
+  gap: 10px;
+  background-color: var(--orange);
+  color: #fff;
+  margin-top: 20px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn--medium {
+  padding: 15px 35px;
+}
+
+.btn--small {
+  padding: 15px 35px;
+}
+
+.card__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+
+  width: calc(100% - 40px);
+  height: 72px;
+
+  background-color: var(--white);
+  color: var(--dark);
+
+  text-decoration: none;
+  font-family: Manrope;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+
+  z-index: var(--z-overlay);
+  transition: all 0.5s ease;
+}
+
+.card:hover .card__btn {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.service__btn,
+.team__btn {
+  display: block;
+  width: max-content;
+  margin: 40px auto;
+}
+
+// testonimal
+
+.testimonial-btn {
+  position: relative;
+  display: inline-block;
+  padding: 28px;
+  background-color: var(--dark);
+  color: #fff;
+}
+
+.testimonial-btn:hover {
+  background-color: var(--orange);
+}
+
+.testimonial-btn--prev {
+  background-color: var(--dark);
+}
+
+.testimonial-btn--prev::before {
+  content: "\003C";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.testimonial-btn--next::before {
+  content: "\003E";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.btn:hover {
+  background-color: var(--grey);
+  color: var(--orange);
+  transition: all 0.3s ease-in-out;
+}

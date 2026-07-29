@@ -1,3 +1,138 @@
 .footer {
-  height: 100px;
+  background-color: var(--dark);
+}
+
+.footer-top {
+  padding-top: 100px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid #313d39;
+}
+
+.footer__heading {
+  color: var(--white);
+  font-family: Manrope;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.875rem;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 15px;
+}
+
+.footer-list__item {
+  color: #beccc7;
+}
+
+.footer-list__link {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.footer__text {
+  color: #beccc7;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-map {
+  width: 100%;
+  height: 268px;
+  overflow: hidden;
+}
+
+.footer-bottom {
+  padding: 28px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-logo {
+  display: inline-flex;
+  margin-bottom: 12px;
+  object-fit: contain;
+}
+
+.footer__copyright {
+  color: #beccc7;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin-top: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links__item {
+  width: 36px;
+  height: 36px;
+  background-color: #beccc7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.social-links__item i {
+  color: var(--black);
+  transition: color 0.4s ease-in-out;
+}
+
+.social-links__item:hover {
+  background-color: var(--orange);
+}
+
+.social-links__item:hover i {
+  color: var(--white);
+}
+
+.social-links__item--active {
+  background-color: var(--orange);
+}
+
+.social-links__item--active i {
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--grey);
+  color: var(--orange);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__brand {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__brand strong,
+.footer__brand span {
+  color: #fff;
+}
+
+.footer__brand strong {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer__brand span {
+  font-size: 14px;
+}
+
+.footer-bottom__right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }

@@ -1,0 +1,102 @@
+// hero
+.practice__hero {
+  padding: 100px 0;
+  text-align: center;
+  background: #f8ebc9;
+}
+
+.hero {
+  &__title {
+    margin-top: 10px;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 70px;
+  }
+
+  &__desc {
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  @media (max-width: 1199.98px) {
+    padding: 80px 0;
+
+    &__title {
+      margin-top: 10px;
+      font-size: 5rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 60px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    padding: 70px 0;
+
+    &__title {
+      margin-top: 10px;
+      font-size: 4.5rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 60px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    &__title {
+      margin-top: 10px;
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 50px;
+    }
+  }
+}
+
+.desc {
+  margin-top: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .about__wrapper {
+    h2.title {
+      font-size: 3.8rem;
+      line-height: 44px;
+    }
+  }
+}
+
+@media (max-width: 766.98px) {
+  .about__wrapper {
+    h2.title {
+      font-size: 3rem;
+      line-height: 44px;
+    }
+    p.desc {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about__wrapper {
+    h2.title {
+      font-size: 3rem;
+      line-height: 35px;
+    }
+    p.desc {
+      font-size: 1.5rem;
+    }
+  }
+
+  .about-hero {
+    overflow-x: hidden;
+  }
+}
